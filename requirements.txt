@@ -1,0 +1,29 @@
+# ══════════════════════════════════════════════════════════════
+# Insurance Document Intelligence System – Requirements
+# ══════════════════════════════════════════════════════════════
+# Install with:
+#   pip install -r requirements.txt
+#
+# After install, also run:
+#   python -m spacy download en_core_web_sm
+# ══════════════════════════════════════════════════════════════
+
+# ── Core UI ───────────────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── PDF extraction ────────────────────────────────────────────
+pdfplumber>=0.10.3
+PyPDF2>=3.0.1
+
+# ── NLP ───────────────────────────────────────────────────────
+spacy>=3.7.0
+# After pip install, run:  python -m spacy download en_core_web_sm
+
+# ── ML / similarity ───────────────────────────────────────────
+scikit-learn>=1.4.0
+
+# ── LLM (optional) ────────────────────────────────────────────
+openai>=1.14.0
+
+# ── Utilities ─────────────────────────────────────────────────
+python-dotenv>=1.0.0
