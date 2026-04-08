@@ -1,61 +1,46 @@
-# 🧠 RiskScope: Insurance Claims Severity & Risk Intelligence System
+# 🛡️ Insurance Document Intelligence System
 
-An end-to-end AI-powered system that transforms unstructured insurance documents into actionable insights using NLP, risk analytics, and LLM-based intelligence.
-
----
-
-## 🚀 Key Features
-
-- 📄 Upload and process insurance policies and claim documents (PDF)
-- 🔍 Intelligent entity extraction (Policy Number, Name, Premium, Dates, Coverage)
-- 🧠 Hybrid summarization (Rule-based + LLM-powered explanations)
-- ⚠️ Risk analysis engine to detect missing fields and anomalies
-- 📊 Claim severity prediction using contextual understanding (RAG-based)
-- 🔗 Document similarity comparison for duplicate/fraud detection
-- 💬 Chat with documents using LLM-based question answering
+An end-to-end NLP-based application to analyze insurance documents by extracting key entities, detecting risks, summarizing content, and enabling document-based Q&A.
 
 ---
 
-## 💡 Real-World Impact
+## 🚀 Features
 
-Insurance workflows heavily rely on manual document analysis, leading to inefficiencies and errors.
-
-RiskScope addresses this by:
-- Reducing document review time from minutes to seconds
-- Automating structured data extraction from unstructured PDFs
-- Assisting brokers and analysts in faster decision-making
-- Enabling scalable risk assessment across large volumes of claims
+- 📄 Upload insurance PDFs  
+- 🔍 Entity Extraction (Policy No, Name, Premium, Dates)  
+- 🧠 Text Summarization (Rule-based + LLM)  
+- ⚠️ Risk Detection (Missing fields, anomalies)  
+- 🔗 Document Similarity Comparison  
+- 💬 Chat with Document (LLM-powered)  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python
-- Streamlit (UI & deployment)
-- spaCy (NLP & NER)
-- Regex (structured data extraction)
-- pdfplumber / PyPDF2 (PDF parsing)
-- OpenAI API (LLM-based summarization & Q&A)
-- Pandas (data processing)
+- Python  
+- Streamlit  
+- spaCy (NLP)  
+- pdfplumber (PDF extraction)  
+- OpenAI API (LLM)  
 
 ---
 
-## 🧠 System Architecture
+## 🧠 Architecture
 
-1. PDF Upload → Text extraction  
-2. NLP Pipeline → Entity extraction (Regex + spaCy)  
-3. Risk Engine → Missing field detection & anomaly analysis  
-4. RAG Module → Context-aware claim severity prediction  
-5. Similarity Engine → Document comparison  
-6. LLM Layer → Summarization & Q&A  
+1. PDF → Text extraction  
+2. NLP pipeline → Entity extraction  
+3. Rule-based + LLM → Summary  
+4. Risk engine → Flags anomalies  
+5. Similarity module → Compare documents  
+6. Chat module → Query documents  
 
 ---
 
 ## ⚙️ Setup Instructions
 
 ```bash
-git clone https://github.com/matey27/riskscope-insurance-ai.git
-cd riskscope-insurance-ai
+git clone https://github.com/matey27/insurance-document-intelligence.git
+cd insurance-document-intelligence
 
 python -m venv venv
 venv\Scripts\activate
